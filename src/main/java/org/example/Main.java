@@ -13,9 +13,13 @@ public class Main {
 
         do {
             System.out.println("--- PRODUCTOS  ---");
+
             for (PRODUCTO producto : productos) {
+                System.out.println("total inventario" + producto.getCantidad()*producto.getPrecio());
                 System.out.println("Codigo:" + producto.getCodigo() + "  nombre :  "+ producto.getNombre() + " - cantidad: " + producto.getCantidad());
+
             }
+
 
             System.out.println("\nSELECCIONE LA TRANSACCION QUE QUIERE REALIZAR:");
             System.out.println("1. INGRESAR PRODUCTO");
