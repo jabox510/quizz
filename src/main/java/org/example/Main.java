@@ -27,7 +27,7 @@ public class Main {
             System.out.print("Ingrese su opción: ");
             opcion = scanner.nextInt();
 
-            if (opcion == 1 || opcion == 5 || opcion == 3) {
+            if (opcion == 1 || opcion == 5 || opcion == 3 || opcion == 2) {
                 System.out.print("INGRESE EL CODIGO DEL PRODUCTO: ");
                 int codproducto = scanner.nextInt();
                 PRODUCTO productosele = null;
@@ -42,7 +42,6 @@ public class Main {
                     System.out.println("CODIGO NO VALIDO");
                     continue;
 
-
                 }
                 switch (opcion) {
                     case 1:
@@ -54,7 +53,8 @@ public class Main {
                             System.out.print("INGRESE CANTIDAD A VENDER");
                             int unidadventa = scanner.nextInt();
                             productosele.venta(unidadventa);
-                        System.out.println("total venta :"+ (unidadventa * productosele.getPrecio()));
+                        System.out.println("total venta :"+ (unidadventa * productosele.getPrecio()));4
+
 
                         break;
                     case 3:
