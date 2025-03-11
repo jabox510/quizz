@@ -53,7 +53,7 @@ public class Main {
                             System.out.print("INGRESE CANTIDAD A VENDER");
                             int unidadventa = scanner.nextInt();
                             productosele.venta(unidadventa);
-                        System.out.println("total venta :"+ (unidadventa * productosele.getPrecio()));4
+                        System.out.println("total venta :"+ (unidadventa * productosele.getPrecio()));
 
 
                         break;
